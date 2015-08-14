@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="dist/css/jquery-fab.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="dist/js/jquery-fab.min.js"></script>
+        <style>
+        	body {
+        		background-color: #95a5a6;
+        	}
+        </style>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <script>
+            $(document).ready(function(){
+                var links = [
+                    {
+                        "bgcolor":"#2980b9",
+                        "icon":"<i class='fa fa-plus'></i>"
+                    },
+                    {
+                        "url":"http://www.example.com",
+                        "bgcolor":"#f1c40f",
+                        "color":"fffff",
+                        "icon":"<i class='fa fa-pencil'></i>",
+                        "target":"_blank"
+                    },
+                    {
+                        "url":"http://www.example.com",
+                        "bgcolor":"#2ecc71",
+                        "color":"#fffff",
+                        "icon":"<i class='fa fa-comment'></i>"
+                    },
+                    {
+                        "url":"#anchor",
+                        "bgcolor":"#e74c3c",
+                        "color":"#fffff",
+                        "icon":"A"
+                    }
+                ];
+                var options = {
+                    rotate: false
+                };
+                $('#wrapper').jqueryFab(links, options);
+            })
+        </script>
+    </body>
+</html>
