@@ -19,5 +19,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/jeffersonrpn/jquery-fab.git"
-  }
+  },
+  "ignore": [
+  
+  ]
 }
