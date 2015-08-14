@@ -1,0 +1,33 @@
+{
+  "name": "jquery-fab",
+  "authors": [
+    "Jefferson Neves <jefferson.rpn@gmail.com>"
+  ],
+  "description": "Material style floating action button with jQuery",
+  "main": "jquery-fab.html",
+  "keywords": [
+    "jquery",
+    "fab",
+    "material design"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jeffersonrpn/jquery-fab",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jeffersonrpn/jquery-fab.git"
+  },
+  "ignore": [],
+  "_release": "306060ee49",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "306060ee49b6167d6c87304410d984a2f8b28726"
+  },
+  "_source": "git://github.com/jeffersonrpn/jquery-fab.git",
+  "_target": "*",
+  "_originalSource": "jquery-fab",
+  "_direct": true
+}
