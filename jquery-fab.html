@@ -25,22 +25,26 @@
                         "color":"fffff",
                         "icon":"<i class='fa fa-pencil'></i>",
                         "target":"_blank"
+                        "title": "Link 1"
                     },
                     {
                         "url":"http://www.example.com",
                         "bgcolor":"#2ecc71",
                         "color":"#fffff",
                         "icon":"<i class='fa fa-comment'></i>"
+                        "title": "Link 2"
                     },
                     {
                         "url":"#anchor",
                         "bgcolor":"#e74c3c",
                         "color":"#fffff",
-                        "icon":"A"
+                        "icon":"A",
+                        "onclick": function(){alert("You have pressed the fab A!")},
+                        "title": "Alert"
                     }
                 ];
                 var options = {
-                    rotate: false
+                    rotate: true
                 };
                 $('#wrapper').jqueryFab(links, options);
             })
