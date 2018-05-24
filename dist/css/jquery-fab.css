@@ -59,7 +59,6 @@
   cursor: pointer;
 }
 .jfab_btns_wrapper .sub_fab button:hover{
-  opacity: 0.9;
   box-shadow: 0 3px 6px rgba(0,0,0,0.32), 0 3px 6px rgba(0,0,0,0.46);
 }
 .jfab_btns_wrapper .sub_fab span.sub_fab_title{

@@ -88,7 +88,7 @@
 
                     if(i==0){
                         button.addClass('jfab_main_btn');
-                        button.focusout(hide);
+                        button.focusout(function(){setTimeout(hide, 200)});
                         base.$el.append(button);
                         base.mainBtn = button;
                     }else{
