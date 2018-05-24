@@ -16,40 +16,61 @@
   pointer-events:none;
 }
 .jfab_btns_wrapper{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
   right:0;
   bottom:75px;
   position:absolute;
-  display:none;
   -webkit-transition: opacity 0.3s ease-in;
-       -moz-transition: opacity 0.3s ease-in;
-        -ms-transition: opacity 0.3s ease-in;
-         -o-transition: opacity 0.3s ease-in;
-            transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  -ms-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
   pointer-events:all;
 }
-.jfab_btns_wrapper.show{
-  display:block;
-  opacity: 1;
+
+.jfab_btns_wrapper .sub_fab{
+  margin-bottom: 12px;
+  margin-right: 26px;
+  float: right;
+  display: inherit;
+  justify-content: flex-end;
+  align-items:center;
+  -webkit-align-items: center;
 }
-.jfab_btns_wrapper button{
+.jfab_btns_wrapper .sub_fab button{
   width:40px;
   height:40px;
   border-radius:100%;
   background:#e74c3c;
-  margin-bottom:12px;
-  margin-right:26px;
   padding:0;
   border:none;
   outline:none;
   color:#ffffff;
   font-size: 19px;
+  vertical-align: middle;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition:.3s;  
+  transition:.3s;
   pointer-events:all;
   cursor: pointer;
 }
-.jfab_btns_wrapper button:hover{
+.jfab_btns_wrapper .sub_fab button:hover{
   box-shadow: 0 3px 6px rgba(0,0,0,0.32), 0 3px 6px rgba(0,0,0,0.46);
+}
+.jfab_btns_wrapper .sub_fab span.sub_fab_title{
+  display: none;
+  cursor: default;
+  margin-right: 10px;
+  text-align: right;
+  padding: 3px 5px;
+  border-radius: 5px;
+  background: #3d3d3d;
+  opacity: 0.7;
+  color: #ddd;
 }
 button.jfab_main_btn{
   background-color:#e74c3c;
@@ -66,9 +87,10 @@ button.jfab_main_btn{
   border:none;
   outline:none;
   color:#ffffff;
-  font-size:24px;
+  font-size: 30px;
+  vertical-align: middle;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition:.3s;  
+  transition:.3s;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   cursor: pointer;
   pointer-events:all;
@@ -76,11 +98,16 @@ button.jfab_main_btn{
 button:hover.jfab_main_btn{
   box-shadow: 0 3px 6px rgba(0,0,0,0.32), 0 3px 6px rgba(0,0,0,0.46);
 }
-.jfab_main_btn span{
-  transition:.5s;
-}
+
 .jfab_main_btn.rotate {
   transform:rotate(45deg);
   -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.scale-transition { transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important; }
+
+.scale-transition.scale-out {
+  transform: scale(0);
+  transition: transform 0.2s !important;
 }

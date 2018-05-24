@@ -17,30 +17,34 @@
                 var links = [
                     {
                         "bgcolor":"#2980b9",
-                        "icon":"<i class='fa fa-plus'></i>"
+                        "icon":"+"
                     },
                     {
-                        "url":"http://www.example.com",
+                        "href":"http://www.example.com",
                         "bgcolor":"#f1c40f",
                         "color":"fffff",
                         "icon":"<i class='fa fa-pencil'></i>",
-                        "target":"_blank"
+                        "target":"_blank",
+                        "title": "Link 1"
                     },
                     {
-                        "url":"http://www.example.com",
+                        "href":"http://www.example.com",
                         "bgcolor":"#2ecc71",
                         "color":"#fffff",
-                        "icon":"<i class='fa fa-comment'></i>"
+                        "target":"_blank",
+                        "icon":"<i class='fa fa-comment'></i>",
+                        "title": "Link 2"
                     },
                     {
-                        "url":"#anchor",
                         "bgcolor":"#e74c3c",
                         "color":"#fffff",
-                        "icon":"A"
+                        "icon":"A",
+                        "onclick": function(){alert("You have pressed the fab A!")},
+                        "title": "Alert"
                     }
                 ];
                 var options = {
-                    rotate: false
+                    rotate: true
                 };
                 $('#wrapper').jqueryFab(links, options);
             })
